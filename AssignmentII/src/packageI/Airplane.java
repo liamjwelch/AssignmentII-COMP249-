@@ -1,15 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+// ----------------------------------------------------- 
+// Part: (PHASE I)
+// Written by: (Liam Welch, 40136341) 
+// -----------------------------------------------------
+
 package packageI;
+
+import assignmentii.UFO;
 
 /**
  *
  * @author liamw
  */
-public class Airplane {
+public class Airplane extends UFO {
     
     private String brand;
     private double price;
