@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package assignmentii;
+package packageII;
 
 /**
  *
@@ -11,7 +11,62 @@ package assignmentii;
  */
 public class Quadcopter extends Helicopter {
     
-    int maxFlyingSpeed;
+	private int maxFlyingSpeed;
+
     
+    public Quadcopter() {
+    	super();
+    	maxFlyingSpeed=99999;
+    	
+    }
+	public Quadcopter(String brand, double price, int horsePower, int numOfCylinders, int creationYear,
+			int passengerCapacity, int maxFlyingSpeed) {
+		
+		super(brand, price, horsePower, numOfCylinders, creationYear, passengerCapacity);
+		this.maxFlyingSpeed = maxFlyingSpeed;
+	}
+    
+	public Quadcopter(Quadcopter quadcopter) {
+		super(quadcopter);
+		this.maxFlyingSpeed = quadcopter.maxFlyingSpeed;
+
+	}
+
+	
+	public int getMaxFlyingSpeed() {
+		return maxFlyingSpeed;
+	}
+	public void setMaxFlyingSpeed(int maxFlyingSpeed) {
+		this.maxFlyingSpeed = maxFlyingSpeed;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return (super.toString() + " it has a maximum flying speed of " + maxFlyingSpeed);
+	}
+
+	
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Quadcopter other = (Quadcopter) obj;
+		if (maxFlyingSpeed != other.maxFlyingSpeed)
+			return false;
+		return true;
+	}
+    
+	
+	
+    
+	
+	
+	
     
 }
