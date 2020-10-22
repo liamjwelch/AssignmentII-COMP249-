@@ -11,7 +11,7 @@ import assignmentii.UFO;
  *
  * @author liamw
  */
-public class UAV extends UFO{
+public class UAV extends UFO {
     
 	private double weight;
 	private double price;
@@ -56,7 +56,7 @@ public class UAV extends UFO{
 
 	@Override
 	public String toString() {
-		return (super.toString() + "This UAV weighs " + weight + "kg, and costs" + price + "$.");
+		return (super.toString() + "TYPE: UAV. It weighs " + weight + "kg, and costs " + price + "$.");
 	}
 
 

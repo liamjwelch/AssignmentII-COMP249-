@@ -53,8 +53,8 @@ public class AgriculturalDrone extends UAV {
 
 	@Override
 	public String toString() {
-		return (super.toString() + " it is " + brand + ", and has a carrying capacity of" + carryingCapacity
-				+ " passengers.");
+		return (super.toString() + "\nUAV OF TYPE AGRICULTURAL DRONE, its brand is \"" + brand + "\", with a carrying capacity of " + carryingCapacity
+				+ " passenger(s).");
 	}
 
 

@@ -6,7 +6,7 @@
 
 package assignmentii;
 
-public class UFO {
+public abstract class UFO {
 	
 	private double price;
 
@@ -16,6 +16,12 @@ public class UFO {
 
 	public void setPrice(double price) {
 		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "\nINCOMING UFO DETECTED...\n"
+				+ "UFO IDENTIFIED: ";
 	}
 	
 	

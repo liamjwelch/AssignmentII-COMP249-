@@ -73,7 +73,8 @@ public class Airplane extends UFO {
 	
 	@Override
 	public String toString() {
-		return "This airplane's brand is " + brand + ", it costs " + price + "$, it has a horse power of " + horsePower;
+		return ((super.toString() + "TYPE: AIRPLANE. It's brand is \"" + brand + "\"" + ", it costs " 
+	+ price + "$, it has " + horsePower + " HP."));
 	}
 
 	@Override

@@ -43,7 +43,7 @@ public class Quadcopter extends Helicopter {
 	
 	@Override
 	public String toString() {
-		return (super.toString() + " it has a maximum flying speed of " + maxFlyingSpeed);
+		return (super.toString() + "\nHELICOPTER IS OF TYPE QUADCOPTER. It has a maximum flying speed of " + maxFlyingSpeed+".");
 	}
 
 	

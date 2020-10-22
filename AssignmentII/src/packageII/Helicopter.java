@@ -67,19 +67,10 @@ public class Helicopter extends Airplane {
 
 	@Override
 	public String toString() {
-		return (super.toString() + " there are " + numOfCylinders + " cylinders, it was made in " + creationYear
-				+ ", it can carry" + passengerCapacity + " passengers.");
+		return (super.toString() + "\nAIRPLANE IS OF TYPE HELICOPTER. It has " + numOfCylinders + " cylinders, made in " + creationYear
+				+ ". It can carry " + passengerCapacity + " passenger(s).");
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = super.hashCode();
-		result = prime * result + creationYear;
-		result = prime * result + numOfCylinders;
-		result = prime * result + passengerCapacity;
-		return result;
-	}
 
 	@Override
 	public boolean equals(Object obj) {

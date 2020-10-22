@@ -35,7 +35,7 @@ public class Multirotor extends Helicopter {
 	
 	@Override
 	public String toString() {
-		return (super.toString() + " it has " + numberOfRotors + " rotors");
+		return (super.toString() + "\nHELICOPTER IS OF TYPE MULTIROTOR. It has " + numberOfRotors + " rotors.");
 	}
 
 

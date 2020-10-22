@@ -55,7 +55,7 @@ public class MAV extends UAV {
 
 	@Override
 	public String toString() {
-		return ((super.toString() + "the model is " + model + ", it is " + size + "cm." ));
+		return ((super.toString() + "\nUAV OF TYPE MAV, model type \"" + model + "\", it is " + size + "cm." ));
 	}
 
 
